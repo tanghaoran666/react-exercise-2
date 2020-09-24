@@ -1,0 +1,16 @@
+header {
+  background-color: blue;
+}
+
+h2 {
+  color: white;
+}
+
+.cartNum {
+  float: right;
+  color: white;
+}
+
+.head {
+  display: inline-block;
+}

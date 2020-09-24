@@ -9,11 +9,11 @@ class Phone extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="phone">
         <h3>{this.props.name}</h3>
-        <img src={imgURL} />
+        <img className="phoneImg" src={imgURL} />
         <p>{this.props.price}</p>
-        <button>add to cart</button>
+        <button onClick={this.props.handleCart}>add to cart</button>
       </div>
     );
   }

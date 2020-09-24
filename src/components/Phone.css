@@ -1,3 +1,12 @@
-div {
-  display: inline-block;
+.phoneImg {
+  width: 150px;
+}
+
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phone {
+  margin: 10px;
 }

@@ -1,20 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Phone from './Phone';
 
-class Phones extends React.Component {
+class Brand extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phones: [
-        {
-          name: 'iphone11',
-          price: 5999,
-        },
-        {
-          name: 'iphoneXs',
-          price: 5399,
-        },
-      ],
+      phones: [],
     };
   }
 
@@ -25,7 +17,10 @@ class Phones extends React.Component {
   render() {
     return (
       <div>
-        {this.state.phones.map((phone) => (
+        <div>
+          <h2>this.props.phones.category</h2>
+        </div>
+        {this.props.phones.map((phone) => (
           <Phone name={phone.name} key={phone.name} price={phone.price} />
         ))}
       </div>
@@ -33,4 +28,4 @@ class Phones extends React.Component {
   }
 }
 
-export default Phones;
+export default Brand;
